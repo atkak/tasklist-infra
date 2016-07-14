@@ -56,7 +56,7 @@ resource "aws_elastic_beanstalk_environment" "webapi-dev" {
   setting {
     namespace = "aws:elasticbeanstalk:application"
     name = "Application Healthcheck URL"
-    value = "/tasks"
+    value = "/health"
   }
 
   setting {
